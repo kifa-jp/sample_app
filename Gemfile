@@ -6,11 +6,13 @@ ruby '3.1.1'
 gem 'rails',      '6.0.4'
 gem 'puma',       '4.3.6'
 gem 'sass-rails', '5.1.0'
-gem 'webpacker',  '4.0.7'
+gem 'webpacker',  '~>5.0'
 gem 'turbolinks', '5.2.0'
 gem 'jbuilder',   '2.9.1'
-gem 'bootsnap',   '1.10.3', require: false
+gem 'bootsnap',   '1.11.1', require: false
 gem 'psych',      '~> 3.1'
+gem 'rexml',      '~>3.2', '>=3.2.4'
+gem 'net-smtp',   '0.3.1', require: false
 
 group :development, :test do
   gem 'sqlite3', '1.4.2'
@@ -25,7 +27,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara',                 '3.28.0'
+  gem 'capybara',                 '3.36.0'
   gem 'selenium-webdriver',       '3.142.4'
   gem 'webdrivers',               '4.1.2'
   gem 'rails-controller-testing', '1.0.4'
