@@ -13,6 +13,7 @@ gem 'bootsnap',   '1.11.1', require: false
 gem 'psych',      '~> 3.1'
 gem 'rexml',      '~>3.2', '>=3.2.4'
 gem 'net-smtp',   '0.3.1', require: false
+gem 'bootstrap-sass', '3.4.1'
 
 group :development, :test do
   gem 'sqlite3', '1.4.2'
