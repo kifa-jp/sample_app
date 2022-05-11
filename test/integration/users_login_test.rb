@@ -1,7 +1,7 @@
-require 'test_helper'
+require "test_helper"
 
+# ユーザーログインテスト
 class UsersLoginTest < ActionDispatch::IntegrationTest
-
   def setup
     @user = users(:michael)
   end
@@ -12,7 +12,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
       params: {
         session: {
           email: @user.email,
-          password: 'password'
+          password: "password"
         }
       }
     )
@@ -99,5 +99,4 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     log_in_as(@user, remember_me: "0")
     assert_empty cookies[:remember_token]
   end
-
 end

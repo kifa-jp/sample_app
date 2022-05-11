@@ -15,6 +15,9 @@ gem 'rexml',      '~>3.2', '>=3.2.4'
 gem 'net-smtp',   '0.3.1', require: false
 gem 'bcrypt',     '3.1.13'
 gem 'bootstrap-sass', '3.4.1'
+gem 'faker',      '2.20.0'
+gem 'will_paginate', '3.3.1'
+gem 'bootstrap-will_paginate', '1.0.0'
 
 group :development, :test do
   gem 'sqlite3', '1.4.2'
