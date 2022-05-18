@@ -3,12 +3,12 @@ require:
 
 AllCops:
     Exclude:
-        - bin/*
-        - db/schema.rb
-        - vendor/**/*
-        - Gemfile
-        - Guardfile
-        - Rakefile
+        - "bin/*"
+        - "db/schema.rb"
+        - "vendor/**/*"
+        - "Gemfile"
+        - "Guardfile"
+        - "Rakefile"
 
 Rails:
     Enabled: true
@@ -19,11 +19,11 @@ Rails:
 
 Metrics/MethodLength:
     Exclude:
-        - 'db/migrate/*'
+        - "db/migrate/*"
 
 Metrics/AbcSize:
     Exclude:
-        - 'db/migrate/*'
+        - "db/migrate/*"
 
 # "Missing top-level class documentation comment."を無効
 Style/Documentation:
