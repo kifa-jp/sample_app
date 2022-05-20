@@ -9,6 +9,7 @@ class Micropost < ApplicationRecord
 
   # 表示用のリサイズ済み画像を返す
   def display_image
-    image.variant(resize_to_limit: [300, 300])
+    # image.variant(resize_to_limit: [300, 300])
+    image # 環境の問題でリサイズが動作しないためそのまま帰す
   end
 end
