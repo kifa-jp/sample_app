@@ -5,11 +5,10 @@ class Micropost < ApplicationRecord
   validates :user_id, presence: true
   validates :content, presence: true, length: { maximum: 140 }
   validates :image, content_type: { in: %w[image/jpeg image/gif image/png], message: "must be a valid image format" },
-                    size: { less_than: 5.kilobytes, message: "should be less than 5MB" }
+                    size: { less_than: 5.megabytes, message: "should be less than 5MB" }
 
   # 表示用のリサイズ済み画像を返す
   def display_image
-    # image.variant(resize_to_limit: [300, 300])
-    image # 環境の問題でリサイズが動作しないためそのまま帰す
+    image.variant(resize_to_limit: [300, 300], format: :jpeg).processed
   end
 end

@@ -18,9 +18,9 @@ gem 'bootstrap-sass', '3.4.1'
 gem 'faker',      '2.20.0'
 gem 'will_paginate', '3.3.1'
 gem 'bootstrap-will_paginate', '1.0.0'
-gem 'active_storage_validations', '0.8.2'
-gem 'image_processing', '1.9.3'
-gem 'mini_magick', '4.9.5'
+gem 'active_storage_validations', '0.9.8'
+gem 'image_processing', '1.12.2'
+gem 'mini_magick', '4.11.0'
 
 group :development, :test do
   gem 'sqlite3', '1.4.2'
